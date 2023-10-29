@@ -8,7 +8,7 @@ const ShoeCard = ({ imgURLs, changeBigShoeImage, bigShoeImage }) => {
 
   return (
     <div
-      className={`cursor-pointer max-sm:p-4 p-6 rounded-xl bg-card bg-cover bg-center flex-1 flex justify-center items-cent border-b-8 hover:w-32  ${
+      className={`cursor-pointer max-sm:p-4 p-6 rounded-xl bg-card bg-cover bg-center flex-1 flex justify-center items-cent border-b-8 \  ${
         bigShoeImage === imgURLs.bigShoe
           ? "border-green-600"
           : "border-transparent"

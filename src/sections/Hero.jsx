@@ -13,12 +13,15 @@ const Hero = () => {
   const [bigShoe, setBigShoe] = useState(bigShoe1);
   return (
     <section className="w-full flex-1 sm:flex  justify-center items-center max-sm:mt-5 mt-8">
-      <div className="flex-1 justify-center items-center">
+      <div className="flex-1 justify-center items-center mx-auto">
         <HeroTitle />
-        <Button label="Shop now" iconURL={arrowRight} />
+        <div className="max-sm:flex-1 max-sm:flex justify-center items-center">
+          <Button label="Shop now" iconURL={arrowRight} />
+        </div>
+
         <Statistics statistics={statistics} />
       </div>
-      <div>
+      <div className="flex-1">
         <div className="max-sm:my-10 max-sm:mx-10 relative  xl:min-h-screen bg- bg-hero bg-cover bg-center pt-20 pb-40 rounded-lg px-5 mx-2">
           <img
             className=" object-contain"

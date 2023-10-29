@@ -5,19 +5,16 @@ import { navLinks } from "../constants";
 const Nav = () => {
   return (
     <header className="flex justify-between max-sm:pl-5 pl-10  xl:pt-10 pt-5">
-      <a href="/" className=" w-1/3">
-        <img
-          className="  "
-          src={headerLogo}
-          alt="logo"
-          width="150px"
-          height="100px"
-        />
+      <a href="/" className=" w-2/3">
+        <img src={headerLogo} alt="logo" width="150px" height="100px" />
       </a>
-      <ul className="flex w-2/3 pr-5 justify-around max-sm:hidden">
+      <ul className="flex w-3/4 justify-around max-sm:hidden">
         {navLinks.map((item) => {
           return (
-            <li key={item.href}>
+            <li
+              key={item.href}
+              className="text-zinc-400 hover:text-zinc-800 font-momo font-bold"
+            >
               <a href={item.href}>{item.label}</a>
             </li>
           );
